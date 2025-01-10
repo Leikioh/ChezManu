@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzeria - Site Vitrine</title>
+    <!-- Lien vers Bootstrap CSS (si nécessaire) -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Bannière avec logo et contact -->
+    <header class="banner-header">
+        <div class="container d-flex justify-content-between align-items-center py-3">
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo Pizzeria" class="img-fluid" style="height: 190px;">
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Le Kiosque Chez Manu</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pizza.html">Nos Pizzas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Nous Contacter</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="contact text-right">
+                <p class="mb-0 my-3 text-white">Appelez-nous: <strong>01 23 45 67 89</strong></p>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section Accueil -->
+    <section id="accueil" class="bg-light text-center py-5">
+        <div class="container">
+            <h1 class="display-4">Bienvenue au Kiosque Chez Manu</h1>
+            <p class="lead">Découvrez nos délicieuses pizzas préparées avec des ingrédients frais et authentiques !</p>
+        </div>
+    </section>
+
+    <!-- Trois cartes cliquables -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="pizza.html?category=classiques" class="card-link">
+                        <div class="card">
+                            <img src="images/pizzaclassique.jpg" class="card-img-top" alt="Pizza Classique">
+                            <div class="card-body">
+                                <h5 class="card-title">Les Standards & Traditionelles</h5>
+                                <p class="card-text">Explorez notre sélection de pizzas classiques.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="pizza.html?category=speciales" class="card-link">
+                        <div class="card">
+                            <img src="images/pizzaspecial.jpg" class="card-img-top" alt="Pizzas Spécialités">
+                            <div class="card-body">
+                                <h5 class="card-title">Les Spéciales & Chef</h5>
+                                <p class="card-text">Découvrez nos pizzas spéciales et originales.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="pizza.html?category=desserts" class="card-link">
+                        <div class="card">
+                            <img src="images/dessert.jpg" class="card-img-top" alt="Desserts">
+                            <div class="card-body">
+                                <h5 class="card-title">Pizza Dessert & Boissons</h5>
+                                <p class="card-text">Terminez votre repas avec nos desserts et boissons.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="bg-light py-5 text-center">
+        <div class="container">
+            <h2>Nous Contacter</h2>
+            <p>Adresse: 123 Rue de la Pizza, 75001 Paris</p>
+            <p>Téléphone: 01 23 45 67 89</p>
+            <p>Email: contact@pizzeria.com</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-3 text-center">
+        <p>&copy; 2024 Le Kiosque Chez Manu - Tous droits réservés.</p>
+    </footer>
+
+    <!-- Lien vers Bootstrap JS et dépendances -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
