@@ -125,5 +125,14 @@ footer {
 }
 
 body {
-    padding-top: 78px; /* Ajustez la valeur selon la hauteur de votre navbar */
+    padding-top: 90px; /* Ajustez la valeur selon la hauteur de votre navbar */
+}
+.contact-link {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+.contact-link:hover {
+    color: #f8c471; /* Couleur de survol */
+    text-decoration: underline; /* Ligne soulignée au survol */
 }
