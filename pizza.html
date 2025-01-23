@@ -20,10 +20,10 @@
         </div>
     </header>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+     <!-- Navigation -->
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">Le Kiosque Chez Manu</a>
+            <a class="navbar-brand" href="index.html">Le Kiosque Chez Manu</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -46,7 +46,6 @@
             </div>
         </div>
     </nav>
-
 
     <!-- Section Menu Pizzas -->
     <section class="py-5">
@@ -125,7 +124,7 @@
                             <img src="images/margerita.jpg" class="card-img-top" alt="Pizza Chèvre Miel">
                             <div class="card-body">
                                 <h5 class="card-title">La Chèvre Miel</h5>
-                                <p class="card-text">Sauce Tomate, Mozzarella, Chèvre, Miel après cuisson</p>
+                                <p class="card-text">Sauce Tomate, Mozzarella, Chèvre, Miel (après cuisson)</p>
                                 <span class="card-alergen"><i>Allergènes : Gluten, Lait</i></span>
                                 <div class="mt-3">
                                     <button class="btn btn-outline-primary" onclick="afficherPrix('petite', 'prix-ChevreMiel')">Petite</button>
@@ -149,7 +148,7 @@
                             <img src="images/margerita.jpg" class="card-img-top" alt="Pizza Sicilienne">
                             <div class="card-body">
                                 <h5 class="card-title">La Sicilienne</h5>
-                                <p class="card-text">Sauce Tomate, Olives, Filets d'anchois, Câpres, Mozarella</p>
+                                <p class="card-text">Sauce Tomate, Olives, Filets d'anchois, Câpres, Mozzarella</p>
                                 <span class="card-alergen"><i>Allergènes : Gluten, Lait, Poisson</i></span>
                                 <div class="mt-3">
                                     <button class="btn btn-outline-primary" onclick="afficherPrix('petite', 'prix-Sicilienne')">Petite</button>
@@ -167,7 +166,7 @@
                             <img src="images/margerita.jpg" class="card-img-top" alt="Pizza Vesuvio">
                             <div class="card-body">
                                 <h5 class="card-title">La Vésuvio</h5>
-                                <p class="card-text">Sauce Tomate, Champignons Cuisinés, Mozarella, œuf</p>
+                                <p class="card-text">Sauce Tomate, Champignons Cuisinés, Mozzarella, œuf</p>
                                 <span class="card-alergen"><i>Allergènes : Gluten, Lait, œuf </i></span>
                                 <div class="mt-3">
                                     <button class="btn btn-outline-primary" onclick="afficherPrix('petite', 'prix-Vesuvio')">Petite</button>
@@ -185,7 +184,7 @@
                             <img src="images/margerita.jpg" class="card-img-top" alt="Pizza Fuoco">
                             <div class="card-body">
                                 <h5 class="card-title">La Fuoco</h5>
-                                <p class="card-text">Sauce Tomate, Chorizo, Jambon Supérieur, Mozarella</p>
+                                <p class="card-text">Sauce Tomate, Chorizo, Jambon Supérieur, Mozzarella</p>
                                 <span class="card-alergen"><i>Allergènes : GluteFermiere</i></span>
                                 <div class="mt-3">
                                     <button class="btn btn-outline-primary" onclick="afficherPrix('petite', 'prix-Fuoco')">Petite</button>
@@ -203,7 +202,7 @@
                             <img src="images/margerita.jpg" class="card-img-top" alt="Pizza Fermiere">
                             <div class="card-body">
                                 <h5 class="card-title">La Fermière</h5>
-                                <p class="card-text">Sauce Tomate, Jambon Supérieur, Créme Fluide, Mozarella, œuf </p>
+                                <p class="card-text">Sauce Tomate, Jambon Supérieur, Créme Fluide, Mozzarella, œuf </p>
                                 <span class="card-alergen"><i>Allergènes : Gluten, Lait, Poisson</i></span>
                                 <div class="mt-3">
                                     <button class="btn btn-outline-primary" onclick="afficherPrix('petite', 'prix-Fermiere')">Petite</button>
@@ -275,7 +274,7 @@
                             <img src="images/margerita.jpg" class="card-img-top" alt="Pizza Bolognaise">
                             <div class="card-body">
                                 <h5 class="card-title">La Bolognaise</h5>
-                                <p class="card-text">Sauce Tomate, Vainde Hâchée, Beurre persillé, Mozarella </p>
+                                <p class="card-text">Sauce Tomate, Vainde Hâchée, Beurre persillé, Mozzarella </p>
                                 <span class="card-alergen"><i>Allergènes : Gluten, Lait</i></span>
                                 <div class="mt-3">
                                     <button class="btn btn-outline-primary" onclick="afficherPrix('petite', 'prix-Bolognaise')">Petite</button>
@@ -288,6 +287,7 @@
                             </div>
                         </div>
                     </div>
+                   
                     <!-- Ajout de nouvelle pizza au dessus de se commentaire -->
                 </div>
             </div>
@@ -295,15 +295,114 @@
             <!-- Grille des pizzas spéciales -->
             <div id="speciales" class="section-content" style="display: none;">
                 <div class="d-flex flex-column mb-3">
+                    <h1 class="display-5 shadow-lg p-3 mb-5 bg-body-tertiary rounded"> Les Pizzas du Chef</h1>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="images/margerita.jpg" class="card-img-top" alt="Pizza Perigord">
+                            <div class="card-body">
+                                <h5 class="card-title">La Périgord</h5>
+                                <p class="card-text">Base Crème Fraiche, Pomme de Terre, Fondue d'Oignons Maison, Champignons Cuisinés, Confiture de Figue, Foie Gras, Mozzarella </p>
+                                <span class="card-alergen"><i>Allergènes : Gluten, Lait</i></span>
+                                <div class="mt-3">
+                                    <button class="btn btn-outline-primary" onclick="afficherPrix('petite', 'prix-Perigord')">Petite</button>
+                                    <button class="btn btn-outline-primary" onclick="afficherPrix('grande', 'prix-Perigord')">Grande</button>
+                                    <button class="btn btn-outline-primary" onclick="afficherPrix('calzone', 'prix-Perigord')">Calzone</button>
+                                </div>
+                                <div class="mt-3">
+                                    <span id="prix-Perigord" class="prix">Sélectionnez une taille pour voir le prix</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="images/margerita.jpg" class="card-img-top" alt="Pizza Raclette">
+                            <div class="card-body">
+                                <h5 class="card-title">La Raclette</h5>
+                                <p class="card-text">Base Crème Fraiche, Pomme de Terre, Jambon de Pays, Fromage à Raclette</p>
+                                <span class="card-alergen"><i>Allergènes : Gluten, Lait</i></span>
+                                <div class="mt-3">
+                                    <button class="btn btn-outline-primary" onclick="afficherPrix('petite', 'prix-Raclette')">Petite</button>
+                                    <button class="btn btn-outline-primary" onclick="afficherPrix('grande', 'prix-Raclette')">Grande</button>
+                                    <button class="btn btn-outline-primary" onclick="afficherPrix('calzone', 'prix-Raclette')">Calzone</button>
+                                </div>
+                                <div class="mt-3">
+                                    <span id="prix-Raclette" class="prix">Sélectionnez une taille pour voir le prix</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="images/margerita.jpg" class="card-img-top" alt="Pizza Troyenne">
+                            <div class="card-body">
+                                <h5 class="card-title">La Troyenne</h5>
+                                <p class="card-text">Base Crème Fraiche, Moutarde, Oignons, Pomme de Terre, Andouillette, Chaource, Mozzarella</p>
+                                <span class="card-alergen"><i>Allergènes : Gluten, Lait, Moutarde</i></span>
+                                <div class="mt-3">
+                                    <button class="btn btn-outline-primary" onclick="afficherPrix('petite', 'prix-Troyenne')">Petite</button>
+                                    <button class="btn btn-outline-primary" onclick="afficherPrix('grande', 'prix-Troyenne')">Grande</button>
+                                    <button class="btn btn-outline-primary" onclick="afficherPrix('calzone', 'prix-Troyenne')">Calzone</button>
+                                </div>
+                                <div class="mt-3">
+                                    <span id="prix-Troyenne" class="prix">Sélectionnez une taille pour voir le prix</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="images/margerita.jpg" class="card-img-top" alt="Pizza Tartiflette">
+                            <div class="card-body">
+                                <h5 class="card-title">La Tartiflette</h5>
+                                <p class="card-text">Base Crème Fraiche, Pomme de Terre, Foudue d'Oignons Maison, Lardons, Reblochon, Mozzarella</p>
+                                <span class="card-alergen"><i>Allergènes : Gluten, Lait</i></span>
+                                <div class="mt-3">
+                                    <button class="btn btn-outline-primary" onclick="afficherPrix('petite', 'prix-Tartiflette')">Petite</button>
+                                    <button class="btn btn-outline-primary" onclick="afficherPrix('grande', 'prix-Tartiflette')">Grande</button>
+                                    <button class="btn btn-outline-primary" onclick="afficherPrix('calzone', 'prix-Tartiflette')">Calzone</button>
+                                </div>
+                                <div class="mt-3">
+                                    <span id="prix-Tartiflette" class="prix">Sélectionnez une taille pour voir le prix</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="images/margerita.jpg" class="card-img-top" alt="Pizza Poulet">
+                            <div class="card-body">
+                                <h5 class="card-title">La Poulet</h5>
+                                <p class="card-text">Sauce Tomate, Poulet, Fondue d'Oignons Maison, Chèvre, Miel, Crème Fluide, Mozzarella</p>
+                                <span class="card-alergen"><i>Allergènes : Gluten, Lait</i></span>
+                                <div class="mt-3">
+                                    <button class="btn btn-outline-primary" onclick="afficherPrix('petite', 'prix-Poulet')">Petite</button>
+                                    <button class="btn btn-outline-primary" onclick="afficherPrix('grande', 'prix-Poulet')">Grande</button>
+                                    <button class="btn btn-outline-primary" onclick="afficherPrix('calzone', 'prix-Poulet')">Calzone</button>
+                                </div>
+                                <div class="mt-3">
+                                    <span id="prix-Poulet" class="prix">Sélectionnez une taille pour voir le prix</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ajout de nouvelle pizza au dessus de se commentaire -->
+                </div>
+
+                <div class="d-flex flex-column mb-3">
                     <h1 class="display-5 shadow-lg p-3 mb-5 bg-body-tertiary rounded"> Les Spéciales</h1>
                 </div>
+
                 <div class="row">
                     <div class="col-md-4 mb-4">
                         <div class="card">
                             <img src="images/margerita.jpg" class="card-img-top" alt="Pizza Burger">
                             <div class="card-body">
                                 <h5 class="card-title">La Burger</h5>
-                                <p class="card-text">Sauce Tomate, Vainde Hâchée, Beurre persillé, Mozarella </p>
+                                <p class="card-text">Sauce Tomate, Vainde Hâchée, Beurre persillé, Mozzarella </p>
                                 <span class="card-alergen"><i>Allergènes : Gluten, Lait</i></span>
                                 <div class="mt-3">
                                     <button class="btn btn-outline-primary" onclick="afficherPrix('petite', 'prix-Burger')">Petite</button>
@@ -316,6 +415,170 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="images/margerita.jpg" class="card-img-top" alt="Pizza Kebab">
+                            <div class="card-body">
+                                <h5 class="card-title">La Kebab</h5>
+                                <p class="card-text">Sauce Tomate, Viande à Kebab, Fondue d'Oignons maison, Sauce Kebab, Mozzarella </p>
+                                <span class="card-alergen"><i>Allergènes : Gluten, Lait</i></span>
+                                <div class="mt-3">
+                                    <button class="btn btn-outline-primary" onclick="afficherPrix('petite', 'prix-Kebab')">Petite</button>
+                                    <button class="btn btn-outline-primary" onclick="afficherPrix('grande', 'prix-Kebab')">Grande</button>
+                                    <button class="btn btn-outline-primary" onclick="afficherPrix('calzone', 'prix-Kebab')">Calzone</button>
+                                </div>
+                                <div class="mt-3">
+                                    <span id="prix-Kebab" class="prix">Sélectionnez une taille pour voir le prix</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="images/margerita.jpg" class="card-img-top" alt="Pizza CapOuPasCap">
+                            <div class="card-body">
+                                <h5 class="card-title">La Cap Ou Pas Cap</h5>
+                                <p class="card-text">Sauce Tomate, Jambon Supérieur, Merguez, Chorizo, Lardons, Sauce Samouraï, Épices, Mozzarella </p>
+                                <span class="card-alergen"><i>Allergènes : Gluten, Lait</i></span>
+                                <div class="mt-3">
+                                    <button class="btn btn-outline-primary" onclick="afficherPrix('petite', 'prix-CapOuPasCap')">Petite</button>
+                                    <button class="btn btn-outline-primary" onclick="afficherPrix('grande', 'prix-CapOuPasCap')">Grande</button>
+                                    <button class="btn btn-outline-primary" onclick="afficherPrix('calzone', 'prix-CapOuPasCap')">Calzone</button>
+                                </div>
+                                <div class="mt-3">
+                                    <span id="prix-CapOuPasCap" class="prix">Sélectionnez une taille pour voir le prix</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="images/margerita.jpg" class="card-img-top" alt="Pizza RoyaleBBQ">
+                            <div class="card-body">
+                                <h5 class="card-title">La Pizza Royale Au Barbecue</h5>
+                                <p class="card-text">Sauce Tomate, Fondue d'Oignons Maison, Poulet, Merguez, Sauce Barbecue, Poivrons Grillés au Four, Origan, Mozzarella </p>
+                                <span class="card-alergen"><i>Allergènes : Gluten, Lait</i></span>
+                                <div class="mt-3">
+                                    <button class="btn btn-outline-primary" onclick="afficherPrix('petite', 'prix-RoyaleBBQ')">Petite</button>
+                                    <button class="btn btn-outline-primary" onclick="afficherPrix('grande', 'prix-RoyaleBBQ')">Grande</button>
+                                    <button class="btn btn-outline-primary" onclick="afficherPrix('calzone', 'prix-RoyaleBBQ')">Calzone</button>
+                                </div>
+                                <div class="mt-3">
+                                    <span id="prix-RoyaleBBQ" class="prix">Sélectionnez une taille pour voir le prix</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="images/margerita.jpg" class="card-img-top" alt="Pizza Country">
+                            <div class="card-body">
+                                <h5 class="card-title">La Country</h5>
+                                <p class="card-text">Sauce Tomate, Viande Hachée de Boeuf, Chorizo, Fondue d'Oignons Maison, Mozzarella, Épices à Pizza, œuf </p>
+                                <span class="card-alergen"><i>Allergènes : Gluten, Lait, œuf</i></span>
+                                <div class="mt-3">
+                                    <button class="btn btn-outline-primary" onclick="afficherPrix('petite', 'prix-Country')">Petite</button>
+                                    <button class="btn btn-outline-primary" onclick="afficherPrix('grande', 'prix-Country')">Grande</button>
+                                    <button class="btn btn-outline-primary" onclick="afficherPrix('calzone', 'prix-Country')">Calzone</button>
+                                </div>
+                                <div class="mt-3">
+                                    <span id="prix-Country" class="prix">Sélectionnez une taille pour voir le prix</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="images/margerita.jpg" class="card-img-top" alt="Pizza Chti">
+                            <div class="card-body">
+                                <h5 class="card-title">La Ch'ti</h5>
+                                <p class="card-text">Base Crème, Pomme de Terre, Lardons, Mozzarella, Maroilles </p>
+                                <span class="card-alergen"><i>Allergènes : Gluten, Lait</i></span>
+                                <div class="mt-3">
+                                    <button class="btn btn-outline-primary" onclick="afficherPrix('petite', 'prix-Chti')">Petite</button>
+                                    <button class="btn btn-outline-primary" onclick="afficherPrix('grande', 'prix-Chti')">Grande</button>
+                                    <button class="btn btn-outline-primary" onclick="afficherPrix('calzone', 'prix-Chti')">Calzone</button>
+                                </div>
+                                <div class="mt-3">
+                                    <span id="prix-Chti" class="prix">Sélectionnez une taille pour voir le prix</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="images/margerita.jpg" class="card-img-top" alt="Pizza Carnivore">
+                            <div class="card-body">
+                                <h5 class="card-title">La Carnivore</h5>
+                                <p class="card-text">Sauce Tomate, Merguez, Viande Hachée de Boeuf, Poulet, Poivrons Grillés au Four, Sauce Barbecue, Mozzarella </p>
+                                <span class="card-alergen"><i>Allergènes : Gluten, Lait</i></span>
+                                <div class="mt-3">
+                                    <button class="btn btn-outline-primary" onclick="afficherPrix('petite', 'prix-Carnivore')">Petite</button>
+                                    <button class="btn btn-outline-primary" onclick="afficherPrix('grande', 'prix-Carnivore')">Grande</button>
+                                    <button class="btn btn-outline-primary" onclick="afficherPrix('calzone', 'prix-Carnivore')">Calzone</button>
+                                </div>
+                                <div class="mt-3">
+                                    <span id="prix-Carnivore" class="prix">Sélectionnez une taille pour voir le prix</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="images/margerita.jpg" class="card-img-top" alt="Pizza California">
+                            <div class="card-body">
+                                <h5 class="card-title">La California</h5>
+                                <p class="card-text">Sauce Tomate, Pomme de Terre, Viande Hachée, Fondue d'Oignons maison, Cheddar, Sauce Barbecue, Mozzarella</p>
+                                <span class="card-alergen"><i>Allergènes : Gluten, Lait</i></span>
+                                <div class="mt-3">
+                                    <button class="btn btn-outline-primary" onclick="afficherPrix('petite', 'prix-California')">Petite</button>
+                                    <button class="btn btn-outline-primary" onclick="afficherPrix('grande', 'prix-California')">Grande</button>
+                                    <button class="btn btn-outline-primary" onclick="afficherPrix('calzone', 'prix-California')">Calzone</button>
+                                </div>
+                                <div class="mt-3">
+                                    <span id="prix-California" class="prix">Sélectionnez une taille pour voir le prix</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="images/margerita.jpg" class="card-img-top" alt="Pizza Pena">
+                            <div class="card-body">
+                                <h5 class="card-title">La Pena</h5>
+                                <p class="card-text">Base Crème, Viande hachée de Boeuf, Fondue d'Oignons Maison, Cornichons Sucrés, Cheddar Maturé (7 mois), Sauce Burger, Bacon Fumé, Mozzarella </p>
+                                <span class="card-alergen"><i>Allergènes : Gluten, Lait</i></span>
+                                <div class="mt-3">
+                                    <button class="btn btn-outline-primary" onclick="afficherPrix('petite', 'prix-Pena')">Petite</button>
+                                    <button class="btn btn-outline-primary" onclick="afficherPrix('grande', 'prix-Pena')">Grande</button>
+                                    <button class="btn btn-outline-primary" onclick="afficherPrix('calzone', 'prix-Pena')">Calzone</button>
+                                </div>
+                                <div class="mt-3">
+                                    <span id="prix-Pena" class="prix">Sélectionnez une taille pour voir le prix</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="images/margerita.jpg" class="card-img-top" alt="Pizza MoitMoit">
+                            <div class="card-body">
+                                <h5 class="card-title">La Moit Moit</h5>
+                                <p class="card-text">Deux recettes au choix valable sur toute la carte</p>
+                                <span class="card-alergen"><i>Allergènes : Voir recettes choisie</i></span>
+                                <div class="mt-3">
+                                    <button class="btn btn-outline-primary" onclick="afficherPrix('petite', 'prix-MoitMoit')">Petite</button>
+                                    <button class="btn btn-outline-primary" onclick="afficherPrix('grande', 'prix-MoitMoit')">Grande</button>
+                            
+                                </div>
+                                <div class="mt-3">
+                                    <span id="prix-MoitMoit" class="prix">Sélectionnez une taille pour voir le prix</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Ajout de nouvelle pizza au dessus de se commentaire -->
                 </div>
             </div>
 
@@ -327,36 +590,311 @@
                 <div class="row">
                     <div class="col-md-4 mb-4">
                         <div class="card">
-                            <img src="images/dessert1.jpg" class="card-img-top" alt="Dessert Tiramisu">
+                            <img src="images/PizzaChoco.jpg" class="card-img-top" alt="Pizza TripleChoco">
                             <div class="card-body">
-                                <h5 class="card-title">Tiramisu</h5>
-                                <p>Classique italien.</p>
+                                <h5 class="card-title">La Triple Choco</h5>
+                                <p class="card-text">Chocolat Noir, Chocolat au Lait, Chocolat Blanc, Crème Fluide, Coulis de Chocolat</p>
+                                <span class="card-alergen"><i>Allergènes : Gluten, Lait</i></span>
+                                <div class="mt-3">
+                                    <button class="btn btn-outline-primary" onclick="afficherPrix('petite', 'prix-TripleChoco')">Petite</button>
+                                    <button class="btn btn-outline-primary" onclick="afficherPrix('grande', 'prix-TripleChoco')">Grande</button>
+                            
+                                </div>
+                                <div class="mt-3">
+                                    <span id="prix-TripleChoco" class="prix">Sélectionnez une taille pour voir le prix</span>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="images/PizzaChoco.jpg" class="card-img-top" alt="Pizza NutellaBanane">
+                            <div class="card-body">
+                                <h5 class="card-title">La Nutella Banane</h5>
+                                <p class="card-text"> Nutella, Banane, Noix de Coco</p>
+                                <span class="card-alergen"><i>Allergènes : Gluten, Lait</i></span>
+                                <div class="mt-3">
+                                    <button class="btn btn-outline-primary" onclick="afficherPrix('petite', 'prix-NutellaBanane')">Petite</button>
+                                    <button class="btn btn-outline-primary" onclick="afficherPrix('grande', 'prix-NutellaBanane')">Grande</button>
+                            
+                                </div>
+                                <div class="mt-3">
+                                    <span id="prix-NutellaBanane" class="prix">Sélectionnez une taille pour voir le prix</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="images/PizzaChoco.jpg" class="card-img-top" alt="Pizza NutellaPoire">
+                            <div class="card-body">
+                                <h5 class="card-title">La Nutella Poire</h5>
+                                <p class="card-text">Nutella, Poire, Coulis de Chocolat</p>
+                                <span class="card-alergen"><i>Allergènes : Gluten, Lait</i></span>
+                                <div class="mt-3">
+                                    <button class="btn btn-outline-primary" onclick="afficherPrix('petite', 'prix-NutellaPoire')">Petite</button>
+                                    <button class="btn btn-outline-primary" onclick="afficherPrix('grande', 'prix-NutellaPoire')">Grande</button>
+                            
+                                </div>
+                                <div class="mt-3">
+                                    <span id="prix-NutellaPoire" class="prix">Sélectionnez une taille pour voir le prix</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="images/PizzaChoco.jpg" class="card-img-top" alt="Pizza NutellaPoireBananeAnanas">
+                            <div class="card-body">
+                                <h5 class="card-title">La Nutella Poire Banane Ananas</h5>
+                                <p class="card-text">Nutella, Poire, Banane, Ananas, Noix de Coco, Coulis de Chocolat</p>
+                                <span class="card-alergen"><i>Allergènes : Gluten, Lait</i></span>
+                                <div class="mt-3">
+                                    <button class="btn btn-outline-primary" onclick="afficherPrix('petite', 'prix-NutellaPoireBananeAnanas')">Petite</button>
+                                    <button class="btn btn-outline-primary" onclick="afficherPrix('grande', 'prix-NutellaPoireBananeAnanas')">Grande</button>
+                            
+                                </div>
+                                <div class="mt-3">
+                                    <span id="prix-NutellaPoireBananeAnanas" class="prix">Sélectionnez une taille pour voir le prix</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ajout de nouvelle pizza au dessus de se commentaire -->
                 </div>
                 <div class="d-flex flex-column mb-3">
-                    <h1 class="display-5 shadow-lg p-3 mb-5 bg-body-tertiary rounded"> Boissons </h1>
+                    <h1 class="display-5 shadow-lg p-3 mb-5 bg-body-tertiary rounded"> Toutes Nos Boissons </h1>
                 </div>
                 <div class="row">
                     <div class="col-md-4 mb-4">
                         <div class="card">
-                            <img src="images/dessert1.jpg" class="card-img-top" alt="Dessert Tiramisu">
+                            <img src="images/oasis.jpg" class="card-img-top" alt="Oasis">
                             <div class="card-body">
-                                <h5 class="card-title">Tiramisu</h5>
-                                <p>Classique italien.</p>
+                                <h5 class="card-title">Oasis Tropical</h5>
+                                <p class="card-text"></p>
+                                <span class="card-alergen"><i></i></span>
+                                <div class="mt-3">
+                                    <button class="btn btn-outline-primary" onclick="afficherPrix('petite', 'prix-Oasis')">33 cl</button>
+                                    <button class="btn btn-outline-primary" onclick="afficherPrix('grande', 'prix-Oasis')">2 L</button>
+                            
+                                </div>
+                                <div class="mt-3">
+                                    <span id="prix-Oasis" class="prix">Sélectionnez une taille pour voir le prix</span>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="images/cocaclassique.jpg" class="card-img-top" alt="CocaCola">
+                            <div class="card-body">
+                                <h5 class="card-title">Coca-Cola</h5>
+                                <p class="card-text"></p>
+                                <span class="card-alergen"><i></i></span>
+                                <div class="mt-3">
+                                    <button class="btn btn-outline-primary" onclick="afficherPrix('petite', 'prix-CocaCola')">33 cl</button>
+                                    <button class="btn btn-outline-primary" onclick="afficherPrix('grande', 'prix-CocaCola')">1,25 L</button>
+                            
+                                </div>
+                                <div class="mt-3">
+                                    <span id="prix-CocaCola" class="prix">Sélectionnez une taille pour voir le prix</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="images/cocazero.jpg" class="card-img-top" alt="CocaColaZero">
+                            <div class="card-body">
+                                <h5 class="card-title">Coca-Cola Zero</h5>
+                                <p class="card-text"></p>
+                                <span class="card-alergen"><p>33 cl</p></span>
+                                
+                                <div class="mt-3">
+                                    <span id="prix-CocaCola" class="prix">Prix : 2,00 €</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="images/icetea.jpg" class="card-img-top" alt="Ice Tea">
+                            <div class="card-body">
+                                <h5 class="card-title">Ice tea</h5>
+                                <p class="card-text"></p>
+                                <span class="card-alergen"><p>33 cl</p></span>
+                                
+                                <div class="mt-3">
+                                    <span id="prix-CocaCola" class="prix">Prix : 2,00 €</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="images/orangina.jpg" class="card-img-top" alt="Orangina">
+                            <div class="card-body">
+                                <h5 class="card-title">Orangina</h5>
+                                <p class="card-text"></p>
+                                <span class="card-alergen"><p>33 cl</p></span>
+                                
+                                <div class="mt-3">
+                                    <span id="prix-CocaCola" class="prix">Prix : 2,00 €</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="images/monster.jpg" class="card-img-top" alt="Monster Energy">
+                            <div class="card-body">
+                                <h5 class="card-title">Monster Energy</h5>
+                                <p class="card-text"></p>
+                                <span class="card-alergen"><p>50 cl</p></span>
+                                
+                                <div class="mt-3">
+                                    <span id="prix-CocaCola" class="prix">Prix : 3,80 €</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="images/cristalline.jpg" class="card-img-top" alt="Eau Cristalline">
+                            <div class="card-body">
+                                <h5 class="card-title">Eau Cristalline</h5>
+                                <p class="card-text"></p>
+                                <span class="card-alergen"><p>50 cl</p></span>
+                                
+                                <div class="mt-3">
+                                    <span id="prix-CocaCola" class="prix">Prix : 1,20 €</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="images/sanpellegrino.jpg" class="card-img-top" alt="San Pellegrino">
+                            <div class="card-body">
+                                <h5 class="card-title">San Pellegrino</h5>
+                                <p class="card-text"></p>
+                                <span class="card-alergen"><p>50 cl</p></span>
+                                
+                                <div class="mt-3">
+                                    <span id="prix-CocaCola" class="prix">Prix : 2,50 €</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="images/heineken.jpg" class="card-img-top" alt="Heineken">
+                            <div class="card-body">
+                                <h5 class="card-title">Heineken</h5>
+                                <p class="card-text"></p>
+                                <span class="card-alergen"><p>50 cl</p></span>
+                                
+                                <div class="mt-3">
+                                    <span id="prix-CocaCola" class="prix">Prix : 3,50 €</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="images/desperados.jpg" class="card-img-top" alt="Desperados">
+                            <div class="card-body">
+                                <h5 class="card-title">Desperados</h5>
+                                <p class="card-text"></p>
+                                <span class="card-alergen"><p>50 cl</p></span>
+                                
+                                <div class="mt-3">
+                                    <span id="prix-CocaCola" class="prix">Prix : 4,00 €</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="images/rosé.jpg" class="card-img-top" alt="Rosé Pays d'Oc">
+                            <div class="card-body">
+                                <h5 class="card-title">Rosé Pays d'Oc</h5>
+                                <p class="card-text"></p>
+                                <span class="card-alergen"><p>75 cl</p></span>
+                                
+                                <div class="mt-3">
+                                    <span id="prix-CocaCola" class="prix">Prix : 8,00 €</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="images/rosélambrusco.jpg" class="card-img-top" alt="Rosé Lambrusco">
+                            <div class="card-body">
+                                <h5 class="card-title">Rosé Lambrusco</h5>
+                                <p class="card-text"></p>
+                                <span class="card-alergen"><p>75 cl</p></span>
+                                
+                                <div class="mt-3">
+                                    <span id="prix-CocaCola" class="prix">Prix : 9,00 €</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="images/rougelambrusco.jpg" class="card-img-top" alt="Rouge Lambrusco">
+                            <div class="card-body">
+                                <h5 class="card-title">Rouge Lambrusco</h5>
+                                <p class="card-text"></p>
+                                <span class="card-alergen"><p>75 cl</p></span>
+                                
+                                <div class="mt-3">
+                                    <span id="prix-CocaCola" class="prix">Prix : 9,00 €</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="images/cafe.jpg" class="card-img-top" alt="Café">
+                            <div class="card-body">
+                                <h5 class="card-title">Café</h5>
+                                <p class="card-text"></p>
+                                <span class="card-alergen"></span>
+                                
+                                <div class="mt-3">
+                                    <span id="prix-CocaCola" class="prix">Prix : 2,00 €</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ajout de nouvelle pizza au dessus de se commentaire -->
                 </div>
             </div>
         </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="bg-light py-5 text-center">
+    <div class="container">
+        <h2>Nous Contacter</h2>
+        <p>Adresse: 9 Av. Charles de Gaulle, 51510, Fagnières</p>
+        <p>Téléphone: 03 26 21 02 72</p>
+    </div>
     </section>
 
     <!-- Footer -->
     <footer class="bg-dark text-white py-3 text-center">
         <p>&copy; 2024 Le Kiosque Chez Manu - Tous droits réservés.</p>
     </footer>
+
+     <!-- Lien vers Bootstrap JS et dépendances -->
+     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- Scripts -->
     <script>
@@ -389,7 +927,28 @@
                 "prix-4Saisons": { petite: "13,50 €", grande: "15,50 €", calzone: "15,50 €" },
                 "prix-Vegetarienne": { petite: "13,50 €", grande: "13,50 €", calzone: "13,90 €" },
                 "prix-Bolognaise": { petite: "13,50 €", grande: "15,50 €", calzone: "15,50 €" },
-                "prix-Burger": { petite: "13,90 €", grande: "15,90 €", calzone: "16,10 €" }
+                "prix-Burger": { petite: "13,90 €", grande: "15,90 €", calzone: "16,10 €" },
+                "prix-Kebab": { petite: "13,50 €", grande: "15,50 €", calzone: "15,90 €" },
+                "prix-CapOuPasCap": { petite: "13,90 €", grande: "15,90 €", calzone: "15,90 €" },
+                "prix-RoyaleBBQ": { petite: "13,90 €", grande: "15,90 €", calzone: "16,10 €" },
+                "prix-Country": { petite: "13,90 €", grande: "15,90 €", calzone: "16,10 €" },
+                "prix-Chti": { petite: "13,90 €", grande: "15,90 €", calzone: "15,90 €" },
+                "prix-Carnivore": { petite: "13,90 €", grande: "15,90 €", calzone: "16,10 €" },
+                "prix-California": { petite: "13,90 €", grande: "15,90 €", calzone: "15,90 €" },
+                "prix-MoitMoit": { petite: "14,90 €", grande: "17,90 €" },
+                "prix-Pena": { petite: "13,90 €", grande: "15,90 €", calzone: "16,10 €" },
+                "prix-Perigord": { petite: "14,90 €", grande: "16,90 €", calzone: "16,90 €" },
+                "prix-Raclette": { petite: "13,90 €", grande: "15,90 €", calzone: "15,90 €" },
+                "prix-Troyenne": { petite: "13,90 €", grande: "15,90 €", calzone: "15,90 €" },
+                "prix-Tartiflette": { petite: "13,90 €", grande: "15,90 €", calzone: "15,90 €" },
+                "prix-Poulet": { petite: "13,90 €", grande: "15,90 €", calzone: "15,90 €" },
+                "prix-TripleChoco": { petite: "10,90 €", grande: "11,90 €"},
+                "prix-NutellaBanane": { petite: "10,50 €", grande: "12,50 €"},
+                "prix-NutellaPoire": { petite: "10,50 €", grande: "12,50 €"},
+                "prix-NutellaPoireBananeAnanas": { petite: "11,90 €", grande: "13,90 €"},
+                "prix-Oasis": { petite: "2 €", grande: "3,50 €"},
+                "prix-CocaCola": { petite: "2 €", grande: "3,50 €"},
+
             };
 
             const prix = prixPizzas[elementId]?.[taille];
