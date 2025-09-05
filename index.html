@@ -1,18 +1,82 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Le Kiosque Chez Manu</title>
-    <!-- Lien vers Bootstrap CSS (si nécessaire) -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- ====== SEO de base ====== -->
+  <title>Pizzeria à Fagnières – Le Kiosque Chez Manu | Pizzas au feu de bois, à emporter</title>
+  <meta name="description" content="Pizzeria à Fagnières (51510). Le Kiosque Chez Manu : pizzas généreuses, ingrédients frais, à emporter. Commande au 03 26 21 02 72. 9 Av. Charles de Gaulle, près de Châlons-en-Champagne." />
+  <link rel="canonical" href="https://exemple-de-domaine.fr/" /> <!-- TODO: remplacer par l’URL canonique réelle de la page d’accueil -->
+  <link rel="alternate" href="https://exemple-de-domaine.fr/" hreflang="fr-FR" />
+
+  <!-- ====== Open Graph / Twitter Cards ====== -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:title" content="Le Kiosque Chez Manu – Pizzeria à Fagnières" />
+  <meta property="og:description" content="Pizzas fraîches et savoureuses à Fagnières. Commandez au 03 26 21 02 72." />
+  <meta property="og:url" content="https://exemple-de-domaine.fr/" />
+  <meta property="og:image" content="/images/banniere.jpg" /> <!-- TODO: fournir une image 1200x630 -->
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="/images/favicon-48x48.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="/images/favicon-64x64.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon-180x180.png">
+
+  <!-- ====== Données structurées LocalBusiness (JSON-LD) ====== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Pizzeria",
+    "name": "Le Kiosque Chez Manu",
+    "image": ["https://exemple-de-domaine.fr/images/og-cover.jpg"],
+    "url": "https://exemple-de-domaine.fr/",
+    "telephone": "+33 3 26 21 02 72",
+    "priceRange": "€€",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "9 Av. Charles de Gaulle",
+      "postalCode": "51510",
+      "addressLocality": "Fagnières",
+      "addressCountry": "FR"
+    },
+    "areaServed": ["Fagnières", "Châlons-en-Champagne", "Recy", "Saint-Memmie"],
+    "sameAs": [
+      "https://www.facebook.com/lekiosquechezmanu/"
+    ],
+    "menu": "https://exemple-de-domaine.fr/pizza.html",
+    "servesCuisine": ["Pizza", "Italien"],
+    "hasMap": "https://www.google.com/maps?q=Le+Kiosque+Chez+Manu+Fagni%C3%A8res"
+  }
+  </script>
+
+  <!-- ====== Breadcrumbs (JSON-LD) ====== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://exemple-de-domaine.fr/"}
+    ]
+  }
+  </script>
+
+  <!-- ====== Ressources ====== -->
+  
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+  <!-- Bootstrap (conservé) -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css" />
 </head>
 
 <body>
-    <!-- Bannière avec logo et contact -->
+
+  <!-- Bannière avec logo et contact -->
     <header class="banner-header">
         <div class="container d-flex justify-content-between align-items-center py-3">
             <div class="logo">
@@ -21,8 +85,8 @@
         </div>
     </header>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+     <!-- Navigation -->
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
             <a class="navbar-brand" href="index.html">Le Kiosque Chez Manu</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -47,88 +111,100 @@
             </div>
         </div>
     </nav>
+  
 
-    <!-- Section Accueil -->
-    <section id="accueil" class="bg-light text-center py-5">
-        <div class="container">
-            <h1 class="display-4">Bienvenue au Kiosque Chez Manu</h1>
-            <p class="lead">Découvrez nos délicieuses pizzas préparées avec des ingrédients frais et authentiques !</p>
-        </div>
-    </section>
+  <!-- ====== H1 + texte localisé ====== -->
+  <section id="accueil" class="bg-light text-center py-5">
+    <div class="container">
+      <h1 class="display-4">Pizzeria à Fagnières – Le Kiosque Chez Manu</h1>
+      <p class="lead">Pizzas généreuses, pâte maison, ingrédients frais. À emporter à Fagnières, proche de Châlons‑en‑Champagne.</p>
+      <!-- Optionnel: bouton vers menu + itinéraire -->
+      <div class="mt-3">
+        <a class="btn btn-primary btn-lg mr-2" href="/pizza.html">Voir le menu</a>
+        <a class="btn btn-outline-primary btn-lg" href="https://www.google.com/maps/dir/?api=1&destination=Le+Kiosque+Chez+Manu%2C+9+Av.+Charles+de+Gaulle%2C+51510+Fagni%C3%A8res" target="_blank" rel="noopener">Itinéraire</a>
+      </div>
+    </div>
+  </section>
 
-    <!-- Trois cartes cliquables -->
-    <section class="py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <a href="pizza.html?category=classiques" class="card-link">
-                        <div class="card "style="height: auto;">
-                            <img src="images/pizzaclassique.jpg" class="card-img-top" alt="Pizza Classique">
-                            <div class="card-body">
-                                <h5 class="card-title">Les Standards & Traditionnelles</h5>
-                                <p class="card-text">Explorez notre sélection de pizzas classiques.</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <a href="pizza.html?category=speciales" class="card-link">
-                        <div class="card" style="height: auto;">
-                            <img src="images/pizzaspecial.jpg" class="card-img-top" alt="Pizzas Spécialités">
-                            <div class="card-body">
-                                <h5 class="card-title">Les Pizzas Du Chef & Spéciales</h5>
-                                <p class="card-text">Découvrez la séléction du Chef et nos pizzas Spéciales.</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <a href="pizza.html?category=desserts" class="card-link">
-                        <div class="card" style="height: auto;">
-                            <img src="images/dessert.jpg" class="card-img-top" alt="Desserts">
-                            <div class="card-body">
-                                <h5 class="card-title">Pizza Dessert & Boissons</h5>
-                                <p class="card-text">Terminez votre repas avec nos Pizzas Dessert et boissons.</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
+  <!-- ====== Catégories (images lazy + alt descriptifs) ====== -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <a href="/pizza.html?category=classiques" class="card-link" aria-label="Voir les pizzas standards et traditionnelles">
+            <div class="card h-100">
+              <img src="/images/pizzaclassique.jpg" class="card-img-top" alt="Pizza classique mozzarella et jambon" loading="lazy" width="640" height="426" />
+              <div class="card-body">
+                <h2 class="h5 card-title">Les Standards & Traditionnelles</h2>
+                <p class="card-text">Notre sélection de pizzas incontournables, pour tous les goûts.</p>
+              </div>
             </div>
+          </a>
         </div>
-    </section>
-
-    <!-- Section Avis et Réseaux Sociaux -->
-    <section class="bg-light py-5">
-        <div class="container text-center">
-            <h2>Laissez-nous un avis et suivez-nous</h2>
-            <p class="mb-4">Nous serions ravis de lire vos retours et de vous voir sur nos réseaux sociaux.</p>
-            <a href="https://www.facebook.com/lekiosquechezmanu/" target="_blank" class="btn btn-light shadow-lg p-3 mb-5 bg-body-tertiary rounded">
-                <img src="images/facebook-icon.png" alt="Facebook" style="width: 30px; height: 30px; margin-right: 10px;"> Facebook
-            </a>
-            <a href="https://www.google.com/search?q=Le%20kiosque%20chez%20Manu%20Avis&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxIxNLWwMDG2MDQytzA1MzcxM7c0M9rAyPiKUdInVSE7M7-4sDRVITkjtUrBNzGvVMGxLLN4EStuOQCFjjLFUwAAAA&rldimm=15884381278567467962&tbm=lcl&cs=1&hl=fr&sa=X&ved=0CCgQ9fQKKABqFwoTCOCt7K_86ooDFQAAAAAdAAAAABAG&biw=1920&bih=917&dpr=1#lkt=LocalPoiReviews" target="_blank" class="btn btn-light shadow-lg p-3 mb-5 bg-body-tertiary rounded">
-                <img src="images/google-icon.png" alt="Google" style="width: 30px; height: 30px; margin-right: 10px;"> Avis Google
-            </a>
+        <div class="col-md-4 mb-4">
+          <a href="/pizza.html?category=speciales" class="card-link" aria-label="Voir les pizzas du chef et spéciales">
+            <div class="card h-100">
+              <img src="/images/pizzaspecial.jpg" class="card-img-top" alt="Pizza spéciale du chef avec ingrédients de saison" loading="lazy" width="640" height="426" />
+              <div class="card-body">
+                <h2 class="h5 card-title">Les Pizzas du Chef & Spéciales</h2>
+                <p class="card-text">Les recettes créatives de notre chef, avec des produits de saison.</p>
+              </div>
+            </div>
+          </a>
         </div>
-    </section>
-
-    <!-- Section Contact -->
-    <section id="contact" class="bg-light py-5 text-center">
-        <div class="container">
-            <h2>Nous Contacter</h2>
-            <p>Adresse: 9 Av. Charles de Gaulle, 51510, Fagnières</p>
-            <p>Téléphone: 03 26 21 02 72</p>
+        <div class="col-md-4 mb-4">
+          <a href="/pizza.html?category=desserts" class="card-link" aria-label="Voir les pizzas dessert et boissons">
+            <div class="card h-100">
+              <img src="/images/dessert.jpg" class="card-img-top" alt="Pizza dessert chocolat noisette" loading="lazy" width="640" height="426" />
+              <div class="card-body">
+                <h2 class="h5 card-title">Pizzas Dessert & Boissons</h2>
+                <p class="card-text">Terminez sur une note sucrée et découvrez nos boissons.</p>
+              </div>
+            </div>
+          </a>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-white py-3 text-center">
-        <p>&copy; 2024 Le Kiosque Chez Manu - Tous droits réservés.</p>
-    </footer>
+  <!-- ====== Avis & Réseaux sociaux ====== -->
+  <section class="bg-light py-5">
+    <div class="container text-center">
+      <h2 class="h3">Votre avis compte</h2>
+      <p class="mb-4">Laissez un avis et suivez‑nous :</p>
+      <a href="https://www.facebook.com/lekiosquechezmanu/" target="_blank" rel="noopener" class="btn btn-light shadow-lg p-3 mb-3">
+        <img src="/images/facebook-icon.png" alt="Facebook" width="30" height="30" class="mr-2" /> Facebook
+      </a>
+      <a href="https://www.google.com/search?q=Le%20kiosque%20chez%20Manu%20Avis#lkt=LocalPoiReviews" target="_blank" rel="noopener" class="btn btn-light shadow-lg p-3 mb-3">
+        <img src="/images/google-icon.png" alt="Google" width="30" height="30" class="mr-2" /> Avis Google
+      </a>
+    </div>
+  </section>
 
-    <!-- Lien vers Bootstrap JS et dépendances -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- ====== Contact NAP clair + lien click-to-call / map ====== -->
+  <section id="contact" class="bg-white py-5 text-center">
+    <div class="container">
+      <h2 class="h3">Nous contacter</h2>
+      <p class="mb-1">Adresse : <strong>9 Av. Charles de Gaulle, 51510 Fagnières</strong></p>
+      <p class="mb-1">Téléphone : <a href="tel:0326210272"><strong>03 26 21 02 72</strong></a></p>
+      <p class="mb-0"><a href="https://www.google.com/maps?q=Le+Kiosque+Chez+Manu+Fagni%C3%A8res" target="_blank" rel="noopener">Voir sur Google Maps</a></p>
+    </div>
+  </section>
 
+  <!-- ====== Footer ====== -->
+  <footer class="bg-dark text-white py-4 text-center">
+    <div class="container">
+      <p class="mb-1">© <span id="year"></span> Le Kiosque Chez Manu – Tous droits réservés.</p>
+      <small>Site de la pizzeria à Fagnières (Marne – 51510). Pizzas à emporter.</small>
+    </div>
+  </footer>
+
+  <!-- ====== JS ====== -->
+  <script>
+    // Année automatique dans le footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
