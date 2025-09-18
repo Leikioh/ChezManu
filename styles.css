@@ -98,9 +98,17 @@ footer {
 .card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
-    height: 500px;
+    height: 550px;
 }
 
+.card .card-body { position: relative; padding-bottom: 2rem; } /* pour laisser la place en bas */
+.photo-note {
+  position: absolute;
+  right: 0.75rem;
+  bottom: 0.5rem;
+  font-size: 0.75rem;     /* plus petit */
+  color: #6c757d;         /* gris Bootstrap */
+}
 
 .card:hover {
     transform: translateY(-10px);
